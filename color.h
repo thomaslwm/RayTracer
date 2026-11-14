@@ -7,7 +7,7 @@
 
 using color = vec3;
 
-inline std::ostream& operator<<(std::ostream& out, const color& c) {
+void write_color(std::ostream& out, const color& c) {
     auto r = c.x();
     auto g = c.y();
     auto b = c.z();
@@ -16,7 +16,7 @@ inline std::ostream& operator<<(std::ostream& out, const color& c) {
     int gbyte = static_cast<int>(g * 255);
     int bbyte = static_cast<int>(b * 255);
 
-    return out << rbyte << ' ' << gbyte << ' ' << bbyte;
+    out << rbyte << ' ' << gbyte << ' ' << bbyte << '\n';
 }
 
 #endif
