@@ -1,5 +1,8 @@
 #include <iostream>
 
+#include "vec3.h"
+#include "color.h"
+
 int main() {
     int height = 256;
     int width = 256;
@@ -12,11 +15,9 @@ int main() {
             auto g = static_cast<double>(i) / (height - 1);
             auto b = 0.0;
 
-            int ir = static_cast<int>(r * 255);
-            int ig = static_cast<int>(g * 255);
-            int ib = static_cast<int>(b * 255);
+            auto pixel_color = color(r, g, b);
 
-            std::cout << ir << ' ' << ig << ' ' << ib << '\n';
+            write_color(std::cout, pixel_color);
         }
     }
 
