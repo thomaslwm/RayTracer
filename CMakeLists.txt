@@ -3,4 +3,5 @@ project(RayTracer)
 
 set(CMAKE_CXX_STANDARD 26)
 
-add_executable(RayTracer main.cpp)
+add_executable(RayTracer main.cpp
+        vec3.h)
