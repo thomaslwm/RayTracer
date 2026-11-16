@@ -7,4 +7,5 @@ add_executable(RayTracer main.cpp
         vec3.h
         color.h
         ray.h
-        hittable.h)
+        hittable.h
+        sphere.h)
