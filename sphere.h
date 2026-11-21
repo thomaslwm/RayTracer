@@ -1,10 +1,6 @@
 #ifndef SPHERE_H
 #define SPHERE_H
 
-#include "hittable.h"
-#include "ray.h"
-#include "vec3.h"
-
 class sphere : public hittable {
     public:
         sphere(const point3& center, double radius)

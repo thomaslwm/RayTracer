@@ -1,13 +1,10 @@
 #ifndef HITTABLE_LIST_H
 #define HITTABLE_LIST_H
 
-#include <memory>
 #include <vector>
 
 #include "hittable.h"
 
-using std::make_shared;
-using std::shared_ptr;
 using std::vector;
 
 class hittable_list : public hittable {
@@ -24,7 +21,7 @@ class hittable_list : public hittable {
         }
 
         bool hit(const ray& r, double ray_tmin, double ray_tmax, hit_record& rec) const override {
-            hit_record& copy;
+            hit_record copy;
             bool hit = false;
             auto closest_hit = ray_tmax;
 

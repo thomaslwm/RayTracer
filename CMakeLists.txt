@@ -9,4 +9,5 @@ add_executable(RayTracer main.cpp
         ray.h
         hittable.h
         sphere.h
-        hittable_list.h)
+        hittable_list.h
+        utils.h)
