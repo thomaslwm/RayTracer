@@ -19,3 +19,7 @@ This project aims to implement the raytracer detailed in the [Ray Tracing in One
 - Saving scene description files
 - Diffuse lighting
 - Customizable image output
+
+## Example output
+
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/63cae74b-047c-40ae-a139-10511b466838" />
